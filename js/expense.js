@@ -20,7 +20,7 @@ function loadExpenseTracker() {
       <button id="addExpenseBtn">Add Expense</button>
     </div>
 
-    <h3>Total Expense: <span id="total-expense">₹0</span></h3>
+    <h3>Total Expense: <span id="total-expense">Rs.0</span></h3>
 
     <div id="expense-list"></div>
   `;
@@ -76,7 +76,7 @@ function renderExpenses() {
 
     div.innerHTML = `
       <span>${exp.title} - ₹${exp.amount} (${exp.category})</span>
-      <button onclick="deleteExpense(${exp.id})">❌</button>
+      <button onclick="deleteExpense(${exp.id})">Delete</button>
     `;
 
     list.appendChild(div);
